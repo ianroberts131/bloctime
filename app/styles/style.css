@@ -1,0 +1,28 @@
+.timer {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+}
+
+.clock {
+    text-align: center;
+    font: 40px arial;
+}
+
+#work-session-button {
+    width: 200px;
+    height: 75px;
+    background-color: grey;
+    color: white;
+    font: 30px arial;
+    border-radius: 10px;
+}
+
+#reset-button {
+    width: 200px;
+    height: 75px;
+    background-color: red;
+    color: white;
+    font: 30px arial;
+    border-radius: 10px;
+}

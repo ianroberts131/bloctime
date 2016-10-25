@@ -1,0 +1,7 @@
+<div class="timer">
+    <div class="clock">{{ currentTime }}</div>
+    <div>
+        <button id="work-session-button" ng-show="!workSession" ng-click="toggleTimer()">{{ workSessionText }}</button>
+        <button id="reset-button" ng-show ="workSession" ng-click="toggleTimer()">{{ resetText }}</button>
+    </div>
+</div>
