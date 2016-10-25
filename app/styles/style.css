@@ -9,7 +9,7 @@
     font: 40px arial;
 }
 
-#work-session-button {
+.work-session-button {
     width: 200px;
     height: 75px;
     background-color: grey;
@@ -18,11 +18,19 @@
     border-radius: 10px;
 }
 
-#reset-button {
+.break-button {
     width: 200px;
     height: 75px;
-    background-color: red;
+    background-color: green;
     color: white;
     font: 30px arial;
     border-radius: 10px;
+}
+
+.reset {
+    background-color: red;
+}
+
+.work-session-button, .break-button:hover {
+    cursor: pointer;
 }
