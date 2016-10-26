@@ -20,9 +20,22 @@
                 
                 scope.currentTime = INTERVALS.WORK_SESSION_TIME;
                 
+                var dingSound = new buzz.sound('/assets/sounds/chinese-gong-sound.mp3', {
+                    preload: true
+                });
+                
+                scope.$watch('currentTime', function() {
+                    console.log("I'm watching the currentTime variable");
+                    console.log(scope.currentTime);
+                    if (scope.currentTime == 0) {
+                        console.log('I caught the currentTime == 0!');
+                        dingSound.play();
+                    }
+                });
+                
                 var decrementTimer = function() {
                     scope.currentTime --;
-                    if (scope.workSession == true && scope.currentTime == 0) {
+                    if (scope.workSession == true && scope.currentTime < 0) {
                         $interval.cancel(session);
                         scope.workSession = false;
                         scope.onBreak = true;
@@ -33,7 +46,7 @@
                         } else {
                             scope.currentTime = INTERVALS.BREAK_SESSION_TIME;
                         };
-                    } else if (scope.onBreak == true && scope.currentTime == 0) {
+                    } else if (scope.onBreak == true && scope.currentTime < 0) {
                         $interval.cancel(session);
                         scope.onBreak = false;
                         scope.currentTime = INTERVALS.WORK_SESSION_TIME;
