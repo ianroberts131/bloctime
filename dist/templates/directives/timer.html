@@ -1,5 +1,5 @@
 <div class="timer">
-    <div class="clock">{{ currentTime }}</div>
+    <div class="clock">{{ currentTime | timecode }}</div>
     <div>
         <button class="work-session-button" ng-hide="onBreak" ng-click="toggleTimer()" ng-class="{'reset': workSession == true}">{{ workSessionText }}</button>
         <button class="break-button" ng-show="onBreak" ng-click="toggleTimer()">{{ breakText }}</button>
