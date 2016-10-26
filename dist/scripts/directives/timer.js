@@ -10,6 +10,8 @@
                 
                 var session;
                 
+                var workSessionCounter = 0;
+                
                 scope.workSessionText = "Start Work Session";
                 scope.breakText = "Take a Break";
                 
@@ -24,12 +26,19 @@
                         $interval.cancel(session);
                         scope.workSession = false;
                         scope.onBreak = true;
-                        scope.currentTime = INTERVALS.BREAK_SESSION_TIME;
+                        workSessionCounter ++;
+                        if (workSessionCounter == 4) {
+                            scope.currentTime = INTERVALS.LONG_BREAK_SESSION_TIME;
+                            workSessionCounter == 0;
+                        } else {
+                            scope.currentTime = INTERVALS.BREAK_SESSION_TIME;
+                        };
                     } else if (scope.onBreak == true && scope.currentTime == 0) {
                         $interval.cancel(session);
                         scope.onBreak = false;
                         scope.currentTime = INTERVALS.WORK_SESSION_TIME;
-                    }
+                        scope.workSessionText = "Start Work Session";
+                    };
                 };
 
                 scope.toggleTimer = function () {
@@ -56,6 +65,7 @@
         .constant('INTERVALS', {
             'WORK_SESSION_TIME': 25 * 60,
             'BREAK_SESSION_TIME': 5 * 60,
+            'LONG_BREAK_SESSION_TIME': 30 * 60,
             'ONE_SECOND': 1000
         })
         .directive('timer', ['$interval', 'INTERVALS', timer]);
