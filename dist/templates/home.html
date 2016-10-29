@@ -10,8 +10,9 @@
             </form>
         </div>
         <ul class="task-list">
-            <div class='task-list-item' ng-repeat="task in tasks track by $index" ng-class="{'task-background-color': $index % 2 == 0}">
-                <li >{{ task.text }}</li>
+            <div class='task-list-item' ng-repeat="task in tasks | orderBy:'dateCreated':true track by $index" ng-class="{'task-background-color': $index % 2 == 0}">
+                <li>{{ task.text }}</li>
+                <li>{{ task.dateCreated | date : "MMM d, y h:mm a" }}</li>
             </div>
         </ul>
     </section>

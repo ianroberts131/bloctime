@@ -4,7 +4,8 @@
         
         $scope.addTask = function() {
             $scope.tasks.$add({
-                text: $scope.task
+                text: $scope.task,
+                dateCreated: Date.now()
             });
             
             $scope.task = "";
