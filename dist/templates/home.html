@@ -1,1 +1,22 @@
-<div><timer></timer></div>
+<div>
+    <section class='tasks-section'>
+        <div class="task-form">
+            <h4 id="task-header">Task History</h4>
+            <form ng-submit="addTask()">
+                <div class="form-group">
+                    <input type="text" ng-model="task" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Add Task</button>
+            </form>
+        </div>
+        <ul class="task-list">
+            <div class='task-list-item' ng-repeat="task in tasks track by $index" ng-class="{'task-background-color': $index % 2 == 0}">
+                <li >{{ task.text }}</li>
+            </div>
+        </ul>
+    </section>
+
+    <section class='timer-section'>
+        <timer></timer>
+    </section>
+</div>

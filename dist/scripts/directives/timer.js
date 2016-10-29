@@ -25,10 +25,7 @@
                 });
                 
                 scope.$watch('currentTime', function() {
-                    console.log("I'm watching the currentTime variable");
-                    console.log(scope.currentTime);
                     if (scope.currentTime == 0) {
-                        console.log('I caught the currentTime == 0!');
                         dingSound.play();
                     }
                 });

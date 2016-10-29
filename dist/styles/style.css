@@ -1,7 +1,64 @@
+.tasks-section {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 100vh;
+    background-color: #DCDCDC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tasks {
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 5%;
+}
+
+#task-header {
+    font-size: 30px;
+}
+
+.task-form {
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.task-list {
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 0;
+    width: 100%;
+}
+
+.task-list-item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.task-list-item li {
+    margin-left: 40px;
+}
+
+.task-background-color {
+    background-color: #cccccc;
+}
+
+.timer-section {
+    position: relative;
+    float: right;
+    width: 75%;
+    height: 100vh;
+}
+
+
 .timer {
-    position: absolute;
-    right: 50%;
-    bottom: 50%;
+    width: 200px;
+    margin: auto;
+    padding-top: 30vh;
+    position: relative;
 }
 
 .clock {
