@@ -10,7 +10,7 @@ Simply click the 'Start Work Session' button to begin a 25 minute work session (
 
 If you get distracted at any point (yes, checking your Twitter feed counts), hit the 'Reset Work Session' button to reset the clock.
 
-Once the full 25 minute break is up, the timer will reset to 5 minutes. Click the 'Take a Break' button to start the timer, and do anythin but work during this period.
+Once the full 25 minute break is up, the timer will reset to 5 minutes. Click the 'Take a Break' button to start the timer, and do anything but work during this period.
 
 As you complete tasks, add them to the task bar on the left hand side. This will help track your progress and monitor the efficiency of your work sessions.
 
