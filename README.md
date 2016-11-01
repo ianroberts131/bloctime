@@ -1,8 +1,9 @@
 #Bloctime
 A time management system based on the Pomodoro technique using AngularJS and Firebase
 
-Overview of the Pomodoro Technique:
-The Pomodoro technique breaks work sessions into 30 minute blocks, with the first 25 minutes designated for uninterrupted work and the last 5 minutes for a break. Each of these 30 minute blocks is called a 'pomodoro'. After 4 consecutive pomodoros, a longer 30 minute break is taken. Find more details on the Pomodoro technique [here](http://caps.ucsd.edu/Downloads/tx_forms/koch/pomodoro_handouts/ThePomodoroTechnique_v1-3.pdf) 
+###Overview of the Pomodoro Technique:
+
+The Pomodoro technique breaks work sessions into 30 minute blocks, with the first 25 minutes designated for uninterrupted work and the last 5 minutes for a break. Each of these 30 minute blocks is called a 'pomodoro'. After 4 consecutive pomodoros, a longer 30 minute break is taken. Find more details on the Pomodoro technique [here](http://caps.ucsd.edu/Downloads/tx_forms/koch/pomodoro_handouts/ThePomodoroTechnique_v1-3.pdf).
 
 Simply click the 'Start Work Session' button to begin a 25 minute work session (no distractions!):
 
