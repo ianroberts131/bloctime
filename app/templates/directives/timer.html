@@ -1,6 +1,9 @@
 <div class="timer">
-    <div class="clock">{{ currentTime | timecode }}</div>
-    <div>
+    <div class="digital-clock">{{ currentTime | timecode }}</div>
+    <div class="analog-clock">
+        <canvas id="canvas" width="350" height="350"></canvas>
+    </div>
+    <div class="buttons">
         <button class="work-session-button" ng-hide="onBreak" ng-click="toggleTimer()" ng-class="{'reset': workSession == true}">{{ workSessionText }}</button>
         <button class="break-button" ng-show="onBreak" ng-click="toggleTimer()">{{ breakText }}</button>
     </div>

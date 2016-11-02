@@ -53,17 +53,37 @@
     height: 100vh;
 }
 
+#header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+#description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
 
 .timer {
-    width: 200px;
+    width: 400px;
     margin: auto;
-    padding-top: 30vh;
+    padding-top: 10vh;
     position: relative;
 }
 
-.clock {
+.digital-clock {
     text-align: center;
     font: 40px arial;
+}
+
+.analog-clock {
+    text-align: center;
+}
+
+.buttons {
+    width: 400px;
+    text-align: center;
 }
 
 .work-session-button {
