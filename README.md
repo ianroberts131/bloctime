@@ -24,8 +24,10 @@ The analog clock used was built using HTML5 canvas and JavaScript. I used [this 
 
 The following bit of code in the timer.js directive enables the `drawAnalogClock()` function to be called each time the `currentTime` variable changes (i.e. whenever the time ticks down):
 
-    scope.$watch('currentTime', function() {
-        drawAnalogClock();
-    });
+```javascript
+scope.$watch('currentTime', function() {
+    drawAnalogClock();
+});
+```
 
 If you have any ideas on how to enhance bloctime, please send me a note.
